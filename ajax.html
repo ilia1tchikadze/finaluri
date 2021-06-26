@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <div id="container"></div>
+</head>
+<body>
+
+    <div class="container"></div>
+    <script>
+        const Http = new XMLHttpRequest();
+        const url='https://jsonplaceholder.typicode.com/posts';
+        const container = document.getElementById("container")
+        Http.open("GET", url);
+        Http.send();
+
+    Http.onreadystatechange = (e) => {
+    container.innerHTML = Http.responseText;
+}
+        
+    </script>
+</body>
+</html>

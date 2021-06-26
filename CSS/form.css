@@ -1,0 +1,86 @@
+body {
+    font-size: 16px;
+    background: #f9f9f9;
+    /* font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
+   
+   
+}
+h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+form {
+
+    width: 300px;
+    background: #fff;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    margin: 50px auto 0;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: #999;
+    font-size: 80%;
+}
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.row {
+    padding-bottom: 10px;
+}
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+}
+
+#submit{
+    cursor: pointer;
+    outline: none;
+    background-color: darkcyan;
+}
+
+#submit:hover{
+    background-color: coral;
+    transition: s all ease;
+}
+
+/* //animation */
+
+.animation-div{
+    width: 100px;
+    height: 100px;
+    background-color: #31ab1e;
+    margin: 50px;
+    position: absolute;
+    border-radius: 100px;
+    animation: myanim 5s infinite;
+}
+
+@keyframes myanim{
+    from{left: 0; background-color: #1e8eab; rotate:(20deg)}
+    to{left: 1000px; background-color: yellow;}
+}
